@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 56777223}
   - component: {fileID: 56777222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Midleground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 57675260}
   - component: {fileID: 57675259}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TX Tileset Ground_31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 199696758}
   - component: {fileID: 199696757}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TX Tileset Ground_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,7 +490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 204639347}
   - component: {fileID: 204639346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles_24 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +572,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205151788}
   - component: {fileID: 205151787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Midleground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,7 +654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 227090272}
   - component: {fileID: 227090271}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TX Tileset Ground_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -736,7 +736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 269814848}
   - component: {fileID: 269814847}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: C2010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -818,7 +818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 307627800}
   - component: {fileID: 307627799}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Back_tree_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,7 +900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 360736150}
   - component: {fileID: 360736149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -982,7 +982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488792898}
   - component: {fileID: 488792897}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1064,7 +1064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 498054207}
   - component: {fileID: 498054206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloud_3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1259,7 +1259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 582403220}
   - component: {fileID: 582403219}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: houses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1341,7 +1341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 595973017}
   - component: {fileID: 595973016}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: props_clouds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1423,7 +1423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 635801736}
   - component: {fileID: 635801737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Back_tree_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1505,7 +1505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702034665}
   - component: {fileID: 702034664}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Country_village_props_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1587,7 +1587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 743840213}
   - component: {fileID: 743840214}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: background (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1669,7 +1669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 787765756}
   - component: {fileID: 787765755}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1751,7 +1751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 795950983}
   - component: {fileID: 795950984}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: background (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2257,7 +2257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 902877747}
   - component: {fileID: 902877746}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2338,7 +2338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 911943983}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2564,7 +2564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 957202971}
   - component: {fileID: 957202972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Back_tree_2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2797,7 +2797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 974848010}
   - component: {fileID: 974848011}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Country_village_props_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2879,7 +2879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 978847872}
   - component: {fileID: 978847871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Country_village_props_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2961,7 +2961,7 @@ GameObject:
   m_Component:
   - component: {fileID: 982397688}
   - component: {fileID: 982397687}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: C2010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3162,7 +3162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1007309983}
   - component: {fileID: 1007309982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: props2_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3244,7 +3244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1078571178}
   - component: {fileID: 1078571177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles_22 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3356,7 +3356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1113583806}
   - component: {fileID: 1113583805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3438,7 +3438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1117123537}
   - component: {fileID: 1117123536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3520,7 +3520,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1236818238}
   - component: {fileID: 1236818237}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3602,7 +3602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1257728430}
   - component: {fileID: 1257728429}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: props2_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3766,7 +3766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1362523207}
   - component: {fileID: 1362523206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TX Tileset Ground_24 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3848,7 +3848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1388523169}
   - component: {fileID: 1388523168}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4012,7 +4012,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1449497466}
   - component: {fileID: 1449497465}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles_21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4094,7 +4094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1457714090}
   - component: {fileID: 1457714089}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloud_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4177,7 +4177,7 @@ GameObject:
   - component: {fileID: 1527583288}
   - component: {fileID: 1527583287}
   - component: {fileID: 1527583286}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Warrior_Idle_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4278,7 +4278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1597769610}
   - component: {fileID: 1597769611}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Back_tree_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4550,6 +4550,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edcd8831bb7d735478df120511e727f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_GroundCheck: {fileID: 2068355039}
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
+  speed: 2
+  lives: 5
+  jumpForce: 15
 --- !u!61 &1622781885
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4696,7 +4703,7 @@ GameObject:
   - component: {fileID: 1652616972}
   - component: {fileID: 1652616971}
   - component: {fileID: 1652616970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TX Tileset Ground_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4977,7 +4984,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1731110740}
   - component: {fileID: 1731110739}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5059,7 +5066,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1738680884}
   - component: {fileID: 1738680883}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: C2013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5141,7 +5148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1755296489}
   - component: {fileID: 1755296488}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Country_village_props_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5223,7 +5230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1772380126}
   - component: {fileID: 1772380125}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TX Tileset Ground_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25888,7 +25895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1779854035}
   - component: {fileID: 1779854036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: background (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25970,7 +25977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1787867089}
   - component: {fileID: 1787867090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: background (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26082,7 +26089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1826671520}
   - component: {fileID: 1826671519}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles_22 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26164,7 +26171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1876576986}
   - component: {fileID: 1876576985}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: C2010 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26333,7 +26340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1939704168}
   - component: {fileID: 1939704169}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: background (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26415,7 +26422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1966935411}
   - component: {fileID: 1966935410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Country_village_props_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26626,7 +26633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068355038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0008, y: -0.134, z: 0}
+  m_LocalPosition: {x: -0.0008, y: -0.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1622781883}
@@ -26642,7 +26649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2103965096}
   - component: {fileID: 2103965095}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26724,7 +26731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2116644966}
   - component: {fileID: 2116644965}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
