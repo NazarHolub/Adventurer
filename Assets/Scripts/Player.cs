@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform m_GroundCheck;
     [SerializeField] private LayerMask ground;
     [SerializeField] private float speed = 3f;
-    [SerializeField] private int lives = 5;
+    [SerializeField] private float hp = 5;
     [SerializeField] private float jumpForce;
     [SerializeField] private const float groundCheckRadius = 0.05f;
     private bool isGrounded = true;
@@ -16,10 +16,12 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rigidbody;
     private SpriteRenderer sprite;
+    private Animator anim;
 
 
     private void Awake()
     {
+        anim = GetComponent<Animator>();
         rigidbody = GetComponent<Rigidbody2D>();
         sprite = GetComponentInChildren<SpriteRenderer>();
 
@@ -31,10 +33,21 @@ public class Player : MonoBehaviour
         IsGrounded();
 
         if (Input.GetButton("Horizontal"))
+        {
             Run();
+            anim.SetBool("IsRunning", true);
+        }
+        else
+            anim.SetBool("IsRunning", false);
+
 
         if (isGrounded && Input.GetButtonDown("Jump"))
             Jump();
+
+        if(isGrounded)
+            anim.SetBool("IsJumping", false);
+        else
+            anim.SetBool("IsJumping", true);
     }
 
     private void FixedUpdate()
@@ -63,6 +76,11 @@ public class Player : MonoBehaviour
         Collider2D[] col = Physics2D.OverlapCircleAll(m_GroundCheck.position, groundCheckRadius, ground);
 
         isGrounded = col.Length > 0;
+    }
+
+    private void TakeDamage(float damage)
+    {
+        hp -= damage;
     }
 
     public void OnDrawGizmos()

@@ -4420,7 +4420,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: a5ae307c48b2b5543bd0b4eb0dc38ad1, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -4555,7 +4555,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   speed: 2
-  lives: 5
+  hp: 5
   jumpForce: 15
 --- !u!61 &1622781885
 BoxCollider2D:
