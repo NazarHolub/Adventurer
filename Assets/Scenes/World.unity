@@ -1495,6 +1495,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &684825466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 684825467}
+  m_Layer: 7
+  m_Name: hit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &684825467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684825466}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1622781883}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &702034663
 GameObject:
   m_ObjectHideFlags: 0
@@ -4397,6 +4427,7 @@ GameObject:
   - component: {fileID: 1622781879}
   - component: {fileID: 1622781885}
   - component: {fileID: 1622781884}
+  - component: {fileID: 1622781886}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -4535,6 +4566,7 @@ Transform:
   - {fileID: 2068355039}
   - {fileID: 810538423}
   - {fileID: 1609798302}
+  - {fileID: 684825467}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4551,11 +4583,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_GroundCheck: {fileID: 2068355039}
+  hit: {fileID: 684825467}
   ground:
     serializedVersion: 2
     m_Bits: 64
+  enemy:
+    serializedVersion: 2
+    m_Bits: 256
   speed: 2
   hp: 5
+  damage: 1
+  timeBtwAttack: 0.1
   jumpForce: 15
 --- !u!61 &1622781885
 BoxCollider2D:
@@ -4583,6 +4621,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2408725, y: 0.13045233}
   m_EdgeRadius: 0
+--- !u!114 &1622781886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622781878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321ffb170cc2bd9459ab1e5f8e6ed648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBtwAttack: 0.3
+  hit: {fileID: 684825467}
+  enemy:
+    serializedVersion: 2
+    m_Bits: 256
+  damage: 1
 --- !u!1 &1643007271
 GameObject:
   m_ObjectHideFlags: 0

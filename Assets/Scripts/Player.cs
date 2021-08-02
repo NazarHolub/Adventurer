@@ -9,10 +9,13 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask ground;
     [SerializeField] private float speed = 3f;
     [SerializeField] private float hp = 5;
+    [SerializeField] private float timeBtwAttack = 0.1f;
     [SerializeField] private float jumpForce;
     [SerializeField] private const float groundCheckRadius = 0.05f;
-    private bool isGrounded = true;
 
+    private bool facingRight = true;
+    private bool isGrounded = true;
+    private float moveInput;
 
     private Rigidbody2D rigidbody;
     private SpriteRenderer sprite;
@@ -32,19 +35,13 @@ public class Player : MonoBehaviour
     {
         IsGrounded();
 
-        if (Input.GetButton("Horizontal"))
-        {
-            Run();
-            anim.SetBool("IsRunning", true);
-        }
-        else
-            anim.SetBool("IsRunning", false);
-
+        Run();
 
         if (isGrounded && Input.GetButtonDown("Jump"))
             Jump();
 
-        if(isGrounded)
+
+        if (isGrounded)
             anim.SetBool("IsJumping", false);
         else
             anim.SetBool("IsJumping", true);
@@ -57,13 +54,30 @@ public class Player : MonoBehaviour
 
     private void Run()
     {
-        Vector3 dir = transform.right * Input.GetAxis("Horizontal");
+        moveInput = Input.GetAxis("Horizontal");
+        rigidbody.velocity =new Vector2(moveInput * speed, rigidbody.velocity.y);
 
-        transform.position = Vector3.MoveTowards(transform.position, transform.position + dir, speed * Time.deltaTime);
+        if(facingRight == false && moveInput > 0)
+            Flip();
+        else if(facingRight == true && moveInput < 0)
+            Flip();
 
-        sprite.flipX = dir.x < 0.0f;
+        if(moveInput != 0)
+            anim.SetBool("IsRunning", true);
+        else
+            anim.SetBool("IsRunning", false);
+
     }
 
+    private void Flip()
+    {
+        facingRight = !facingRight;
+
+        Vector3 Scaler = transform.localScale;
+        Scaler.x *= -1;
+        transform.localScale = Scaler;
+    }
+    
     private void Jump()
     {
         //rigidbody.AddForce(transform.up * jumpForce , ForceMode2D.Impulse);
@@ -78,7 +92,7 @@ public class Player : MonoBehaviour
         isGrounded = col.Length > 0;
     }
 
-    private void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         hp -= damage;
     }
@@ -87,4 +101,5 @@ public class Player : MonoBehaviour
     {
         Gizmos.DrawSphere(m_GroundCheck.position, groundCheckRadius);
     }
+
 }
