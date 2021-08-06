@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
 
-    private float timeBtwAttack;
+    private int timeBtwAttack = 50;
     public float startTimeBtwAttack;
 
 
@@ -21,24 +21,21 @@ public class PlayerAttack : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    void Update()
+    private void FixedUpdate()
     {
-        if(timeBtwAttack <= 0)
+
+        if (Input.GetButtonDown("Fire1") && timeBtwAttack >= 50)
         {
-            if (Input.GetButtonDown("Fire1"))
-            {
-                Attack();
-            }
-            timeBtwAttack = startTimeBtwAttack;
+            Attack();
         }
-        else
-        {
-            timeBtwAttack -= Time.deltaTime;
-        }
+
+        timeBtwAttack++;
     }
 
     private void Attack()
     {
+        timeBtwAttack = 0;
+
         anim.SetTrigger("Attack");
 
         Collider2D[] enemies = Physics2D.OverlapCircleAll(hit.position, hitRadius, enemy);
