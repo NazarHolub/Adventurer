@@ -2269,14 +2269,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 714af37ad505d3f4ab628b3086fc4371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_health: 10
   m_moveSpeed: 2
   m_attackDamage: 0
-  m_health: 0
   attackPoint: {fileID: 923122855}
   m_attackRadius: 0.16
   m_attackDistance: 0.22
   m_detectRadius: 1
   m_followRadius: 2
+  playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &902877745
 GameObject:
   m_ObjectHideFlags: 0
@@ -4583,16 +4586,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_GroundCheck: {fileID: 2068355039}
-  hit: {fileID: 684825467}
   ground:
     serializedVersion: 2
     m_Bits: 64
-  enemy:
-    serializedVersion: 2
-    m_Bits: 256
   speed: 2
   hp: 5
-  damage: 1
   timeBtwAttack: 0.1
   jumpForce: 15
 --- !u!61 &1622781885
@@ -4890,14 +4888,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 714af37ad505d3f4ab628b3086fc4371, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_health: 0
   m_moveSpeed: 4
   m_attackDamage: 0
-  m_health: 0
   attackPoint: {fileID: 797215403}
   m_attackRadius: 0.32
   m_attackDistance: 0.3
   m_detectRadius: 1.5
   m_followRadius: 2.5
+  playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!61 &1677817718
 BoxCollider2D:
   m_ObjectHideFlags: 0

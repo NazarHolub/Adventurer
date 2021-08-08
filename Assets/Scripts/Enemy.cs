@@ -6,9 +6,9 @@ public class Enemy : MonoBehaviour
 {
     private Vector3 m_velocity = Vector3.zero;
 
+    [SerializeField] protected int m_health;
     [SerializeField] protected float m_moveSpeed;
     [SerializeField] protected int m_attackDamage;
-    [SerializeField] protected int m_health;
 
     [SerializeField] protected GameObject attackPoint;
     [SerializeField] protected float m_attackRadius;
@@ -17,10 +17,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float m_detectRadius;
     [SerializeField] protected float m_followRadius;
 
+    [SerializeField] protected LayerMask playerLayerMask;
+
     private Animator animator;
     private Rigidbody2D rigidbody;
 
-    private GameObject playerTarget;
+    private GameObject player;
 
     private bool m_isDetected;
 
@@ -34,9 +36,6 @@ public class Enemy : MonoBehaviour
 
     virtual public void Update()
     {
-        if (!m_isDetected || IsFollowing())
-            m_isDetected = IsDetected();
-
         if (m_isDetected)
         {
             LookAtPlayer();
@@ -45,12 +44,25 @@ public class Enemy : MonoBehaviour
 
     virtual public void FixedUpdate()
     {
-        if (m_isDetected)
+        m_isDetected = IsDetected();
+
+        if (m_isDetected || _Follow())
         {
-            if (Vector2.Distance(playerTarget.transform.position, gameObject.transform.position) > m_attackDistance && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                Move();
-            else if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-                animator.Play("Attack");
+            if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+            {
+                if (Vector2.Distance(player.transform.position, gameObject.transform.position) > m_attackDistance)
+                {
+                    Move();
+                }
+                else
+                {
+                    animator.Play("Attack");
+                }
+            }
+        }
+        else
+        {
+            animator.Play("Idle");
         }
     }
 
@@ -64,13 +76,12 @@ public class Enemy : MonoBehaviour
         animator.Play("Run");
     }
 
-
     virtual public void Attack()
     {
-        Collider2D[] overlaped = Physics2D.OverlapCircleAll(attackPoint.transform.position, m_attackRadius);
-        foreach (var player in overlaped)
+        Collider2D[] overlapedColliders = Physics2D.OverlapCircleAll(attackPoint.transform.position, m_attackRadius, playerLayerMask);
+        foreach (var collider in overlapedColliders)
         {
-            if (player.tag == "Player")
+            if (collider.tag == "Player")
             {
                 //player.GetComponent<Player>().TakeHit(m_attackDamage);
                 return;
@@ -78,30 +89,25 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    virtual public bool IsFollowing()
+    virtual public bool _Follow()
     {
-        Collider2D[] overlaped = Physics2D.OverlapCircleAll(transform.position, m_followRadius);
-        foreach (var player in overlaped)
+        if (player != null)
         {
-            if (player.tag == "Player")
-            {
-                playerTarget = player.gameObject;
-                return false;
-            }
+            if (Vector2.Distance(transform.position, player.transform.position) < m_followRadius)
+                return true;
         }
 
-        animator.Play("Idle");
-        return true;
+        return false;
     }
 
     virtual public bool IsDetected()
     {
-        Collider2D[] overlaped = Physics2D.OverlapCircleAll(transform.position, m_detectRadius);
-        foreach (var player in overlaped)
+        Collider2D[] overlapedColliders = Physics2D.OverlapCircleAll(transform.position, m_detectRadius, playerLayerMask);
+        foreach (var collider in overlapedColliders)
         {
-            if (player.tag == "Player")
+            if (collider.tag == "Player")
             {
-                playerTarget = player.gameObject;
+                player = collider.gameObject;
                 return true;
             }
         }
@@ -112,12 +118,29 @@ public class Enemy : MonoBehaviour
     virtual public void LookAtPlayer()
     {
         Vector3 scale = transform.localScale;
-        if (playerTarget.transform.position.x < transform.position.x)
+        if (player.transform.position.x < transform.position.x)
             scale.x = -1f;
         else
             scale.x = 1f;
 
         transform.localScale = scale;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        m_health -= damage;
+
+        if (m_health <= damage)
+            animator.Play("Hit");
+        else
+            animator.Play("Death");
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.name);
+        if (collision.tag == "Player")
+            Debug.Log("Nice");
     }
 
     public void OnDrawGizmos()
