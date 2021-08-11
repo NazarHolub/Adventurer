@@ -55,14 +55,14 @@ public class Player : MonoBehaviour
     private void Run()
     {
         moveInput = Input.GetAxis("Horizontal");
-        rigidbody.velocity =new Vector2(moveInput * speed, rigidbody.velocity.y);
+        rigidbody.velocity = new Vector2(moveInput * speed, rigidbody.velocity.y);
 
-        if(facingRight == false && moveInput > 0)
+        if (facingRight == false && moveInput > 0)
             Flip();
-        else if(facingRight == true && moveInput < 0)
+        else if (facingRight == true && moveInput < 0)
             Flip();
 
-        if(moveInput != 0)
+        if (moveInput != 0)
             anim.SetBool("IsRunning", true);
         else
             anim.SetBool("IsRunning", false);
@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
         Scaler.x *= -1;
         transform.localScale = Scaler;
     }
-    
+
     private void Jump()
     {
         //rigidbody.AddForce(transform.up * jumpForce , ForceMode2D.Impulse);

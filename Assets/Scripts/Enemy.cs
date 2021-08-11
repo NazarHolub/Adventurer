@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class Enemy : MonoBehaviour
 {
     private Vector3 m_velocity = Vector3.zero;
@@ -11,7 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected int m_attackDamage;
 
     [SerializeField] protected GameObject attackPoint;
-    [SerializeField] protected float m_attackRadius;
+    [SerializeField] protected float m_attackRange;
     [SerializeField] protected float m_attackDistance;
 
     [SerializeField] protected float m_detectRadius;
@@ -24,14 +25,12 @@ public class Enemy : MonoBehaviour
 
     private GameObject player;
 
-    private bool m_isDetected;
+    private bool m_isDetected = false;
 
     virtual public void Start()
     {
         animator = gameObject.GetComponent<Animator>();
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
-        m_isDetected = false;
-        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Enemy"), LayerMask.NameToLayer("Enemy"));
     }
 
     virtual public void Update()
@@ -78,7 +77,7 @@ public class Enemy : MonoBehaviour
 
     virtual public void Attack()
     {
-        Collider2D[] overlapedColliders = Physics2D.OverlapCircleAll(attackPoint.transform.position, m_attackRadius, playerLayerMask);
+        Collider2D[] overlapedColliders = Physics2D.OverlapCircleAll(attackPoint.transform.position, m_attackRange, playerLayerMask);
         foreach (var collider in overlapedColliders)
         {
             if (collider.tag == "Player")
@@ -136,16 +135,16 @@ public class Enemy : MonoBehaviour
             animator.Play("Death");
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log(collision.name);
-        if (collision.tag == "Player")
+        Debug.Log(collider.name);
+        if (collider.tag == "Player")
             Debug.Log("Nice");
     }
 
     public void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(attackPoint.transform.position, m_attackRadius);
+        Gizmos.DrawWireSphere(attackPoint.transform.position, m_attackRange);
         Gizmos.DrawWireSphere(transform.position, m_detectRadius);
         Gizmos.DrawWireSphere(transform.position, m_followRadius);
     }

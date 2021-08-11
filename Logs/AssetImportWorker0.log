@@ -15,11 +15,11 @@ E:/Unity/Unity projects/Git Hub Project/Adventurer
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58092
+49835
 Successfully changed project path to: E:/Unity/Unity projects/Git Hub Project/Adventurer
 E:/Unity/Unity projects/Git Hub Project/Adventurer
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 185.26 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 68.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path F:/Unity/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -35,5 +35,358 @@ Initialize mono
 Mono path[0] = 'F:/Unity/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'F:/Unity/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'F:/Unity/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
 Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/Unity/2020.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: F:/Unity/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001697 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 65.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.315 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005730 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 62.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.353 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2236 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.0 MB.
+System memory in use after: 97.9 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2670.
+Total: 2.847000 ms (FindLiveObjects: 0.306600 ms CreateObjectMapping: 0.096800 ms MarkObjects: 2.251000 ms  DeleteObjects: 0.191500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Graphic/Enemies/King/NoEffects/spr_King2combo_NoEffects.png
+  artifactKey: Guid(8f29dd2d7680023408775b2f16501c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoEffects/spr_King2combo_NoEffects.png using Guid(8f29dd2d7680023408775b2f16501c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c1e17484d765d51700d7d44d5adb95') in 0.162761 seconds
+  Import took 0.166781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Graphic/Enemies/King/NoEffects/spr_KingDeath_NoEffects.png
+  artifactKey: Guid(a6463779ad9402d43b0fdb4691c89d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoEffects/spr_KingDeath_NoEffects.png using Guid(a6463779ad9402d43b0fdb4691c89d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce1e91111a5365ad8604be008e4fdcc') in 0.009882 seconds
+  Import took 0.013862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Graphic/Enemies/King/NoEffects/spr_KingIdle_NoEffects.png
+  artifactKey: Guid(33079ae5b305a3f4eb6399fb88d39aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoEffects/spr_KingIdle_NoEffects.png using Guid(33079ae5b305a3f4eb6399fb88d39aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c097ac762a18c634f28f086bb7e3bf2') in 0.027794 seconds
+  Import took 0.032643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Graphic/Enemies/King/NoEffects/spr_KingGroundAttack_NoEffects.png
+  artifactKey: Guid(7e17a74d46aeb984f9120b8fd8247ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoEffects/spr_KingGroundAttack_NoEffects.png using Guid(7e17a74d46aeb984f9120b8fd8247ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8b1b96cab1f2d40ac0c55f372a95fc7') in 0.012853 seconds
+  Import took 0.019588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.383092 seconds.
+  path: Assets/Graphic/Enemies/King/WithBkgColor
+  artifactKey: Guid(3ad3ceeba9cd17442aa1da0a757e7537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/WithBkgColor using Guid(3ad3ceeba9cd17442aa1da0a757e7537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4fbb45606653599c7f894179af47cfd') in 0.001450 seconds
+  Import took 0.005790 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069278 seconds.
+  path: Assets/Graphic/Enemies/King/WithBkgColor/spr_King2Combo_strip_with_color.png
+  artifactKey: Guid(4f6e3f3fc5b0bc044ab14d21a78737f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/WithBkgColor/spr_King2Combo_strip_with_color.png using Guid(4f6e3f3fc5b0bc044ab14d21a78737f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc0633d0ccc5b295926340b632d1e794') in 0.006235 seconds
+  Import took 0.010646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Graphic/Enemies/King/WithBkgColor/spr_KingDeath_strip_with_color.png
+  artifactKey: Guid(e3deeaa1525002a47bd00bbcb486ae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/WithBkgColor/spr_KingDeath_strip_with_color.png using Guid(e3deeaa1525002a47bd00bbcb486ae4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55dcb57563f58b361928b5c42600758') in 0.008217 seconds
+  Import took 0.012320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Graphic/Enemies/King/WithBkgColor/spr_KingTeleport_strip_with_color.png
+  artifactKey: Guid(24816a1ea2d4f8c4890861ae9f8120b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/WithBkgColor/spr_KingTeleport_strip_with_color.png using Guid(24816a1ea2d4f8c4890861ae9f8120b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '548cba2693a0ade7e52574cb9ebf90dd') in 0.008641 seconds
+  Import took 0.012913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Graphic/Enemies/King/WithBkgColor/spr_KingIdle_strip_with_color.png
+  artifactKey: Guid(9e5c245b0efbf4d4e96e12cc25cd1683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/WithBkgColor/spr_KingIdle_strip_with_color.png using Guid(9e5c245b0efbf4d4e96e12cc25cd1683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc776de7c71a0956d191f0b126607f70') in 0.010426 seconds
+  Import took 0.014764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Graphic/Enemies/King/WithBkgColor/spr_KingWalk_strip_with_color.png
+  artifactKey: Guid(e92f27938ee077f43b191aa445295091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/WithBkgColor/spr_KingWalk_strip_with_color.png using Guid(e92f27938ee077f43b191aa445295091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0d6dcf176e08f175d606d83a7425f58') in 0.009026 seconds
+  Import took 0.014018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Graphic/Enemies/King/WithBkgColor/spr_KingGroundAttack_strip_with_color.png
+  artifactKey: Guid(279bf24b1c86e97458e8740102a03966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/WithBkgColor/spr_KingGroundAttack_strip_with_color.png using Guid(279bf24b1c86e97458e8740102a03966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd51f2d4e13a611cb30aeb59da01dc5e7') in 0.006566 seconds
+  Import took 0.010824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006789 seconds.
+  path: Assets/Graphic/Enemies/King/WithBkgColor/spr_KingWalk_strip_with_color.png
+  artifactKey: Guid(e92f27938ee077f43b191aa445295091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/WithBkgColor/spr_KingWalk_strip_with_color.png using Guid(e92f27938ee077f43b191aa445295091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0d6dcf176e08f175d606d83a7425f58') in 0.007220 seconds
+  Import took 0.011789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.715011 seconds.
+  path: Assets/Graphic/Enemies/King/JustEffects
+  artifactKey: Guid(cb0a60d17bbce4547b3a1b9f9069ac2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/JustEffects using Guid(cb0a60d17bbce4547b3a1b9f9069ac2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45d587493c9e35d69160cc7d24eba0db') in 0.008381 seconds
+  Import took 0.017045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071042 seconds.
+  path: Assets/Graphic/Enemies/King/JustEffects/spr_King2combo_strip_just_effects.png
+  artifactKey: Guid(df9820b2f21820d48bfdbe3309b494e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/JustEffects/spr_King2combo_strip_just_effects.png using Guid(df9820b2f21820d48bfdbe3309b494e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7182cbb788d0aeacdd80db5af34e5357') in 0.006084 seconds
+  Import took 0.010238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Graphic/Enemies/King/JustEffects/spr_KingGroundAttack_strip_just_effects.png
+  artifactKey: Guid(be109b6a368902d46aa3e9100cbd38aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/JustEffects/spr_KingGroundAttack_strip_just_effects.png using Guid(be109b6a368902d46aa3e9100cbd38aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f831c6ee9f45a3e3fcf55b261d336f8') in 0.007170 seconds
+  Import took 0.010937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Graphic/Enemies/King/JustEffects/spr_KingDeath_strip_just_effects.png
+  artifactKey: Guid(e6db3cb31c2db3b4ba885c893555ff04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/JustEffects/spr_KingDeath_strip_just_effects.png using Guid(e6db3cb31c2db3b4ba885c893555ff04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b5207e759993f86ad08127d3724160d') in 0.008072 seconds
+  Import took 0.012493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Graphic/Enemies/King/JustEffects/spr_KingIdle_strip_just_effects.png
+  artifactKey: Guid(557e0a0524385d9459e4cddb8524296e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/JustEffects/spr_KingIdle_strip_just_effects.png using Guid(557e0a0524385d9459e4cddb8524296e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe74b59a190f2aa15501631b89c6a3f') in 0.007362 seconds
+  Import took 0.011861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.330691 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor
+  artifactKey: Guid(a7a07f91d76d1654f9a081bfc587d22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor using Guid(a7a07f91d76d1654f9a081bfc587d22a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '416c0dfe40145b890cbb4156e7fb5040') in 0.001531 seconds
+  Import took 0.005581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.061467 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png
+  artifactKey: Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png using Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5607c1434e1643afe64cedbcd6b3c7ee') in 0.009047 seconds
+  Import took 0.013302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_KingWalk_strip_no_bkg.png
+  artifactKey: Guid(a87ad469184beed49bdb2f52bc17ccc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_KingWalk_strip_no_bkg.png using Guid(a87ad469184beed49bdb2f52bc17ccc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52728267db08eb1fc0a8cae8402af8f4') in 0.006390 seconds
+  Import took 0.010077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_KingGroundAttack_strip_no_bkg.png
+  artifactKey: Guid(91457b2bcd159324ca63737e4931aa3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_KingGroundAttack_strip_no_bkg.png using Guid(91457b2bcd159324ca63737e4931aa3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '440cea9b2f0cba92561d6b8163d8ee05') in 0.006667 seconds
+  Import took 0.011211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_KingTeleport_strip_no_bkg.png
+  artifactKey: Guid(19255e67530defe46aac713051d15495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_KingTeleport_strip_no_bkg.png using Guid(19255e67530defe46aac713051d15495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '256e9be3c5a0af64dace3067f51c3305') in 0.009129 seconds
+  Import took 0.013000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_KingIdle_strip_no_bkg.png
+  artifactKey: Guid(d7ebb3dae921c5f408b890cb7cce662b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_KingIdle_strip_no_bkg.png using Guid(d7ebb3dae921c5f408b890cb7cce662b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3709d369f07076e42c17fd083d165b5b') in 0.007676 seconds
+  Import took 0.013011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_KingDeath_strip_no_bkg.png
+  artifactKey: Guid(fc69d6447cb276c42bd7c39b64a70a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_KingDeath_strip_no_bkg.png using Guid(fc69d6447cb276c42bd7c39b64a70a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8a5cbaa4c7c5e3f4b8bf3b15a42466') in 0.006806 seconds
+  Import took 0.011256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.537265 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_KingGroundAttack_strip_no_bkg.png
+  artifactKey: Guid(91457b2bcd159324ca63737e4931aa3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_KingGroundAttack_strip_no_bkg.png using Guid(91457b2bcd159324ca63737e4931aa3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd52649c393c1047c0e6be03841cbb7') in 0.007327 seconds
+  Import took 0.011579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008795 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png
+  artifactKey: Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png using Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b7aff1b260a87926d71ec9c78cf099') in 0.010453 seconds
+  Import took 0.015504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_KingWalk_strip_no_bkg.png
+  artifactKey: Guid(a87ad469184beed49bdb2f52bc17ccc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_KingWalk_strip_no_bkg.png using Guid(a87ad469184beed49bdb2f52bc17ccc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3eb9f90d03142f2a258f3b12e932833') in 0.036732 seconds
+  Import took 0.042111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_KingTeleport_strip_no_bkg.png
+  artifactKey: Guid(19255e67530defe46aac713051d15495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_KingTeleport_strip_no_bkg.png using Guid(19255e67530defe46aac713051d15495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26fe163aa1af6d683fedb3354f0e2023') in 0.009399 seconds
+  Import took 0.015503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_KingIdle_strip_no_bkg.png
+  artifactKey: Guid(d7ebb3dae921c5f408b890cb7cce662b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_KingIdle_strip_no_bkg.png using Guid(d7ebb3dae921c5f408b890cb7cce662b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824d67e7e44d917b39d5fda15a0273db') in 0.009187 seconds
+  Import took 0.013604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_KingDeath_strip_no_bkg.png
+  artifactKey: Guid(fc69d6447cb276c42bd7c39b64a70a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_KingDeath_strip_no_bkg.png using Guid(fc69d6447cb276c42bd7c39b64a70a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cfe945e848bca8cc3c9a5a00c25b1df') in 0.007424 seconds
+  Import took 0.012045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006271 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_KingIdle_strip_no_bkg.png
+  artifactKey: Guid(d7ebb3dae921c5f408b890cb7cce662b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_KingIdle_strip_no_bkg.png using Guid(d7ebb3dae921c5f408b890cb7cce662b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824d67e7e44d917b39d5fda15a0273db') in 0.008030 seconds
+  Import took 0.012576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 258.338806 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png
+  artifactKey: Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png using Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0907f85161a1a9d967994f7ad459d166') in 0.010158 seconds
+  Import took 0.015951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004643 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png
+  artifactKey: Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png using Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0907f85161a1a9d967994f7ad459d166') in 0.008244 seconds
+  Import took 0.012390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.500236 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png
+  artifactKey: Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png using Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '319aeda107ea15fc86bdaaf2d7599a36') in 0.004710 seconds
+  Import took 0.008938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005423 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png
+  artifactKey: Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png using Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '319aeda107ea15fc86bdaaf2d7599a36') in 0.004854 seconds
+  Import took 0.009280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.878530 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png
+  artifactKey: Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png using Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f166f4ef0f68052e71313cd4889a546d') in 0.007122 seconds
+  Import took 0.011874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005704 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png
+  artifactKey: Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png using Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f166f4ef0f68052e71313cd4889a546d') in 0.008942 seconds
+  Import took 0.013342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.178634 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png
+  artifactKey: Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png using Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '816c2255672f38c9bf755efcfd4b7226') in 0.008083 seconds
+  Import took 0.012310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006732 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png
+  artifactKey: Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png using Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '816c2255672f38c9bf755efcfd4b7226') in 0.008730 seconds
+  Import took 0.012999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.354517 seconds.
+  path: Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png
+  artifactKey: Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphic/Enemies/King/NoBkgColor/spr_King2Combo_strip_no_bkg.png using Guid(47f0e2c5091b4214fabd3efe5f392813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f5c3a5bf1952c3f6dc4a9fe3706e03') in 0.020057 seconds
+  Import took 0.024392 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
