@@ -21,13 +21,17 @@ public class PlayerAttack : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-
         if (Input.GetButtonDown("Fire1") && timeBtwAttack >= 50)
         {
             Attack();
         }
+    }
+    private void FixedUpdate()
+    {
+
+        
 
         timeBtwAttack++;
     }
