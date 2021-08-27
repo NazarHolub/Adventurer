@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(StateMachine))]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
-public class EnemyAI : MonoBehaviour
+public class EnemyAI : MonoBehaviour, IDamagable
 {
     public enum States { Idle = 0, Move, Attack, Death }
 
@@ -15,19 +15,28 @@ public class EnemyAI : MonoBehaviour
     private AttackState attackState;
     #endregion
 
+
     [SerializeField] private float m_health;
     [SerializeField] private float m_moveSpeed;
 
+    #region Attack properties
+    [Header("Attack properties")]
+    [SerializeField] private int m_attackDamage;
     [SerializeField] private float m_detectRange;
     [SerializeField] private Transform m_attackPoint;
     [SerializeField] private float m_attackRange;
     [SerializeField] private float m_attackDistance;
+    #endregion
 
+    #region Patrol properties
+    [Header("Patrol properties")]
     [SerializeField] private float m_followRadius;
+    #endregion
 
+    [Header("Player layer mask")]
     [SerializeField] private LayerMask playersLayer;
 
-    private Player player;
+    private GameObject playerGameobject;
 
     StateMachine _stateMachine;
     Animator animator;
@@ -110,15 +119,10 @@ public class EnemyAI : MonoBehaviour
 
     virtual public void Attack()
     {
-        Collider2D[] overlapedColliders = Physics2D.OverlapCircleAll(m_attackPoint.transform.position, m_attackRange, playersLayer);
-        foreach (var collider in overlapedColliders)
-        {
-            if (collider.tag == "Player")
-            {
-                //player.GetComponent<Player>().TakeHit(m_attackDamage);
-                return;
-            }
-        }
+        Collider2D playerCollider = Physics2D.OverlapCircle(m_attackPoint.transform.position, m_attackRange, playersLayer);
+
+        if (playerCollider != null)
+            playerCollider.GetComponent<IDamagable>().TakeDamage(m_attackDamage);
     }
 
     virtual public bool _Follow()
@@ -158,7 +162,7 @@ public class EnemyAI : MonoBehaviour
         transform.localScale = scale;
     }
 
-    virtual public void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         m_health -= damage;
 
